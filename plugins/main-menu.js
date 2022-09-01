@@ -274,28 +274,18 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 • Premium : *${premium ? `${conn.msToDate(premiumTime - new Date() * 1)}` : 'Gratisan'}*
 
 ❏ *S T A T U S   I N F O*
-• Total User : *${rtotalreg} dari ${totalreg}*
-• Tersisa    : *${limit} Limit*
-• Role       : *${role}*
-• Level      : *${level}*
-
-❏ 𝙏𝙄𝙈𝙀
-» Wib : *${time}*
-» Tanggal : *${week} ${weton} ${date}*
-
-❏ 𝙏𝘼𝙃𝙐𝙉 𝘽𝘼𝙍𝙐
-_*${jhari} Hari ${jjam} Jam ${mmmenit} Menit ${ddetik} Detik*_
-
-❏ 𝙍𝘼𝙈𝘼𝘿𝘼𝙉
-_*${harii} Hari ${jamm} Jam ${menitt} Menit ${detikk} Detik*_
-
-❏ 𝙐𝙇𝘼𝙉𝙂 𝙏𝘼𝙃𝙐𝙉 𝙊𝙒𝙉𝙀𝙍
-_*${ohari} Hari ${ojam} Jam ${onet} Menit ${detek} Detik*_
+• 𝘿𝘼𝙁𝙏𝘼𝙍     : *${rtotalreg} dari ${totalreg}*
+• 𝙇𝙄𝙈𝙄𝙏       : *${limit} Limit*
+• 𝙍𝙊𝙇𝙀       : *${role}*
+• 𝙇𝙀𝙑𝙀𝙇       : *${level}*
+❏ 𝙒𝘼𝙆𝙏𝙐      : *${time}*
+❏ 𝙏𝘼𝙉𝙂𝙂𝘼𝙇    : *${week} ${weton} ${date}*
+ 
 
 ${pe}Note: Jika ada Fitur yg Error Lapor ke owner${pe}`,
       footer: wm,
       title: judul,
-      buttonText: "Klik Disini",
+      buttonText: "𝙇𝙄𝙎𝙏 𝙈𝙀𝙉𝙐❏",
       sections
     }
     return conn.sendMessage(m.chat, listMessage, { quoted: m, mentions: await conn.parseMention(judul), contextInfo: { forwardingScore: 99999, isForwarded: true }})
